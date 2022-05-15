@@ -1,0 +1,8 @@
+<div class="jumbotron bg-light">
+  <h2><%= @friend.first_name %> <%= @friend.last_name %></h2>
+  <p><%= @friend.email %> | <%= @friend.phone %> | <%= @friend.twitter %> </p>
+  <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-secondary" %> 
+  <%= link_to 'Delete', @friend, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-danger' %></td>
+<%= link_to 'Back', friends_path, class:"btn btn-dark" %>
+</div>
+
